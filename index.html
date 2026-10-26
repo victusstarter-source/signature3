@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Victus·Global | Employee Signature Editor</title>
+<link rel="stylesheet" href="css/editor.css">
+</head>
+<body>
+<header>
+ <div><p class="eyebrow">Victus·Global</p><h1>Employee Email Signature Editor</h1><p class="sub">Reusable 600px signatures · ready for the GitHub branch new</p></div>
+ <span class="headmark">GitHub Pages ready</span>
+</header>
+<div class="workspace">
+<aside>
+ <h2>Employee details</h2><p class="descr">Replace the example details below. Changes appear in the preview immediately.</p>
+ <div class="field"><label for="name">Full name</label><input id="name" value="Nicole Smith" autocomplete="off"></div>
+ <div class="field"><label for="title">Job title</label><input id="title" value="Chief Executive Officer"></div>
+ <div class="field"><label for="phone">Phone number</label><input id="phone" value="+267 74777777"></div>
+ <div class="field"><label for="email">Employee email address</label><input id="email" type="email" value="info@victusglobal.co.uk"><small>Default is the company information address; replace it with the correct employee address.</small></div>
+ <details>
+  <summary>Company text and image settings</summary>
+  <div class="field"><label for="websiteDisplay">Website label</label><input id="websiteDisplay" value="victusglobal.co.uk"></div>
+  <div class="field"><label for="website">Website link</label><input id="website" value="https://victusglobal.co.uk/"></div>
+  <div class="field"><label for="tagline1">First tagline line</label><input id="tagline1" value="Smart Business."></div>
+  <div class="field"><label for="tagline2">Second tagline line</label><input id="tagline2" value="Real Impact."></div>
+  <div class="field"><label for="services">Services (one per line)</label><textarea id="services" rows="4">Outsourcing
+Developmental Work
+Back Office Support
+Food Technology Consulting</textarea></div>
+  <div class="field"><label for="disclaimer">Disclaimer</label><textarea id="disclaimer" rows="5">This email and any attachments are confidential and may be legally Previleged. If you are not the intended recipient, please notify the sender immediately and delete this email from your system.</textarea></div>
+  <div class="field"><label for="assetBase">Public image folder URL (optional override)</label><input id="assetBase" type="url" placeholder="Automatically detected from your GitHub Pages site"><small>Leave blank when this editor is hosted on GitHub Pages: images are linked automatically using the full HTTPS URL. For other hosting, enter the public HTTPS URL of the assets folder.</small></div>
+ </details>
+ <div class="buttons"><button id="copyBtn" type="button">Copy formatted signature</button><button id="downloadBtn" type="button" class="secondary">Download this employee’s HTML</button><button id="resetBtn" type="button" class="secondary">Reset sample details</button></div>
+ <div id="status" role="status" aria-live="polite"></div>
+</aside>
+<main>
+ <div class="preview-card">
+  <div class="viewhead"><h2>Signature preview</h2><span class="pill">600 px • proportional design</span></div>
+  <div class="stage"><div id="preview" aria-label="HTML signature preview"></div></div>
+  <p class="note"><strong>Important:</strong> When hosted on GitHub Pages, this editor automatically exports full HTTPS links for all seven image assets, including the new single-image Watch Our Story button. The local preview uses the PNGs in the adjacent <code>assets/</code> folder. Send a test email in Outlook after installation.</p>
+ </div>
+ <div class="instructions"><h3>Use in Microsoft 365 / Outlook</h3>
+  <ol><li>Open this editor on the published GitHub Pages URL and enter the employee's details.</li><li>Choose <strong>Copy formatted signature</strong>.</li><li>Paste into the Outlook signature editor (in new Outlook / Outlook on the web: <strong>Settings → Accounts → Signatures</strong>). Save.</li><li>Send a test message to an external address and a mobile device to confirm the logo, social links and Watch Our Story image display as intended.</li></ol>
+ <p>The Watch Our Story graphic is now one native-size 160 × 34 PNG, not multiple pieces that Outlook can stretch. The downloaded file is a clean HTML signature without the editor and can be reused as a template or adapted for company-wide deployment.</p>
+ </div>
+</main>
+</div>
+<script src="js/config.js"></script>
+<script src="js/editor.js"></script>
+</body></html>
